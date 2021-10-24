@@ -4,6 +4,9 @@ import { ThemeProvider } from "@mui/material";
 import Head from "next/head";
 import { AppContainer } from "@styles/page/_app";
 import theme from "ui/themes/theme";
+import { Header } from "ui/components/Header";
+import { CharacterProvider } from "data/hooks/useCharacter";
+import { Footer } from "ui/components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,9 +19,13 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <ThemeProvider theme={theme}>
-        <AppContainer>
-          <Component {...pageProps} />
-        </AppContainer>
+        <CharacterProvider>
+          <AppContainer>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+          </AppContainer>
+        </CharacterProvider>
       </ThemeProvider>
     </>
   );
