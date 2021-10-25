@@ -8,19 +8,32 @@ import { api } from "data/services/apiService";
 const CharacterContext = createContext({} as CharacterContextTypes);
 
 export const CharacterProvider: React.FC<ChildrenProps> = ({ children }) => {
+  const [count, setCount] = useState<number>(0);
+  const [page, setPage] = useState<number>(0);
+  const [itemsPerPage, setItemsPerPage] = useState<number>(10);
   const [characters, setCharacter] = useState<CharacterTypes[]>([]);
 
-  const getData = async (page?: number) => {
-    const { data } = await api.get<CharacterDataTypes>("/characters");
+  const getData = async () => {
+    let offset = page * itemsPerPage;
+    const { data } = await api.get<CharacterDataTypes>(
+      `/characters?offset=${offset}&limit=${itemsPerPage}`
+    );
+    setCount(data.data.total);
     setCharacter(data.data.results);
   };
 
-  useEffect(() => {
-    getData();
-  }, []);
-
   return (
-    <CharacterContext.Provider value={{ getData, characters }}>
+    <CharacterContext.Provider
+      value={{
+        getData,
+        characters,
+        count,
+        page,
+        setPage,
+        itemsPerPage,
+        setItemsPerPage,
+      }}
+    >
       {children}
     </CharacterContext.Provider>
   );

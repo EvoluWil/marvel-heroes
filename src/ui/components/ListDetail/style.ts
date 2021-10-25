@@ -1,32 +1,36 @@
 import { Card, styled, TextField } from "@mui/material";
 
 export const CardContainer = styled(Card)`
-  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 200px 1fr;
   height: 270px;
-  width: 200px;
+  width: 100%;
   background: ${({ theme }) => theme.palette.primary.main};
-  border-radius: ${({ theme }) => theme.spacing(3)} 0;
-  cursor: pointer;
+  border-radius: ${({ theme }) => theme.spacing(3)} 0 0;
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 540px;
+  }
 `;
 
 export const HeroImage = styled("div")`
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
   border: 2px solid ${({ theme }) => theme.palette.primary.main};
   border-radius: ${({ theme }) => theme.spacing(3)} 0 0;
   overflow: hidden;
 
   img {
-    width: 100%;
-    min-height: 100%;
+    height: 270px;
     border-radius: ${({ theme }) => theme.spacing(3)} 0 0;
-    transition: width 0.8s;
+    transition: height 0.8s;
 
     &:hover {
-      width: 130%;
+      height: 276px;
     }
   }
 `;

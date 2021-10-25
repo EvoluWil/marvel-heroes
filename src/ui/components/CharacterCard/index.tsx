@@ -10,9 +10,10 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
   series,
   stories,
   thumbnail,
+  onClick,
 }) => {
   return (
-    <CardContainer>
+    <CardContainer onClick={onClick}>
       <HeroImage>
         <img src={`${thumbnail.path}.${thumbnail.extension}`} alt={name} />
         <HeroName>

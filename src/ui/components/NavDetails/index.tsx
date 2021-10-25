@@ -2,7 +2,7 @@ import * as React from "react";
 import { BottomNavigationAction } from "@mui/material";
 import { NavBarStyled, NavContainer } from "./style";
 
-export const NavBar = () => {
+export const NavDetail = () => {
   const [value, setValue] = React.useState(0);
 
   return (
@@ -14,7 +14,6 @@ export const NavBar = () => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Characters" />
         <BottomNavigationAction label="Comics" />
         <BottomNavigationAction label="Series" />
         <BottomNavigationAction label="Stories" />

@@ -5,43 +5,76 @@ import { UrlTypes } from "./Url";
 export interface CharacterTypes {
   id: number;
   name: string;
-  description: string;
   modified: string;
+  description: string;
   thumbnail: ThumbnailTypes;
-  urls: UrlTypes[];
+  urls?: UrlTypes[];
 
   comics: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items?: RedirectTypes;
   };
 
   series: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items?: RedirectTypes;
   };
 
   stories: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items?: RedirectTypes;
   };
 
   events: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items?: RedirectTypes;
   };
 }
 
 export interface CharacterDataTypes {
   data: {
-    count: number;
+    total: number;
     limit: 20;
     offset: 0;
     results: CharacterTypes[];
   };
 }
 
-export type CharacterCardProps = Omit<CharacterTypes, "modified" | "urls">;
+export interface CharacterCardProps {
+  id: number;
+  name: string;
+  description?: string;
+  modified?: string;
+  thumbnail: ThumbnailTypes;
+  urls?: UrlTypes[];
+
+  comics: {
+    available: number;
+    collectionURI: string;
+    items?: RedirectTypes;
+  };
+
+  series: {
+    available: number;
+    collectionURI: string;
+    items?: RedirectTypes;
+  };
+
+  stories: {
+    available: number;
+    collectionURI: string;
+    items?: RedirectTypes;
+  };
+
+  events: {
+    available: number;
+    collectionURI: string;
+    items?: RedirectTypes;
+  };
+
+  onClick?: () => void;
+}

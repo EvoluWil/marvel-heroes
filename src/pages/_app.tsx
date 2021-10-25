@@ -7,8 +7,9 @@ import theme from "ui/themes/theme";
 import { Header } from "ui/components/Header";
 import { CharacterProvider } from "data/hooks/useCharacter";
 import { Footer } from "ui/components/Footer";
+import { CharacterDetailProvider } from "data/hooks/useCharacterDetails";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -20,15 +21,17 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <CharacterProvider>
-          <AppContainer>
-            <Header />
-            <Component {...pageProps} />
-            <Footer />
-          </AppContainer>
+          <CharacterDetailProvider>
+            <AppContainer>
+              <Header />
+              <Component {...pageProps} />
+              <Footer />
+            </AppContainer>
+          </CharacterDetailProvider>
         </CharacterProvider>
       </ThemeProvider>
     </>
   );
-}
+};
 
 export default MyApp;

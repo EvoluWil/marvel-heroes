@@ -13,15 +13,14 @@ export const Footer = () => {
     <FooterStyled>
       <FooterContainer>
         <Box sx={{ maxWidth: "400px" }}>
-          <FooterTitle>Desenvolvido por Will:</FooterTitle>
+          <FooterTitle>Created by Will:</FooterTitle>
           <Typography variant={"body2"} sx={{ mt: 2 }}>
-            Projeto desenvolvido como desafio, de desenvolver uma aplicação de
-            consumo da api publica da MARVEL!
+            Web project to consume an MARVEL API
           </Typography>
         </Box>
 
         <div>
-          <FooterTitle>Siga-me nas redes</FooterTitle>
+          <FooterTitle>Follow-Me</FooterTitle>
           <AppList>
             <li>
               <a href={"/"} target={"_blank"} rel={"noopener noreferrer"}>
