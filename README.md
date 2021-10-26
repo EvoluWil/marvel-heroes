@@ -7,8 +7,7 @@
 
 ## About
 
-This applications is an personal project with Marvel api consumed.
-![MarvelCaptain]("./src/assets/404.png")
+This applications is an personal project with Marvel api consumed. ![MarvelCaptain]("./src/assets/404.png")
 
 ## screens
 
@@ -23,7 +22,7 @@ This applications is an personal project with Marvel api consumed.
 - List of the MARVEL characters, events, comics and series.
 - Summary cards .
 - Consuming MARVEL public API.
-- Resposible and pagination
+- Resposible and pagination.
 
 ## Technologies
 
