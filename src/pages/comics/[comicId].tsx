@@ -14,7 +14,7 @@ const ComicDetail = () => {
   return (
     <Container>
       <Title title="COMIC DETAILS" />
-      {comic.id ? (
+      {comic?.id ? (
         <ComicDetailCard
           id={comic.id}
           title={comic.title}

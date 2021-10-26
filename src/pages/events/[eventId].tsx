@@ -14,7 +14,7 @@ const EventDetail = () => {
   return (
     <Container>
       <Title title="EVENT DETAILS" />
-      {event.id ? (
+      {event?.id ? (
         <EventDetailCard
           id={event.id}
           title={event.title}

@@ -14,7 +14,7 @@ const SerieDetail = () => {
   return (
     <Container>
       <Title title="SERIE DETAILS" />
-      {serie.id ? (
+      {serie?.id ? (
         <SerieDetailCard
           id={serie.id}
           title={serie.title}
