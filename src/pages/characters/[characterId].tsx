@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import { Container, Stack, TablePagination } from "@mui/material";
+import {
+  CircularProgress,
+  Container,
+  Stack,
+  TablePagination,
+  Typography,
+} from "@mui/material";
 import { useRouter } from "next/dist/client/router";
 
 import { CardListContainer } from "@styles/page";
@@ -51,7 +57,11 @@ const CharacterDetail = () => {
           events={character.events}
           description={character.description}
         />
-      ) : null}
+      ) : (
+        <Typography align="center" sx={{ my: 10 }}>
+          <CircularProgress color="secondary" />
+        </Typography>
+      )}
       <NavDetail
         value={valueView}
         setValue={(event, newValue) => {

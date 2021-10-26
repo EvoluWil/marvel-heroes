@@ -61,7 +61,7 @@ const Characters = () => {
 
       <Title title="ALL CHARACTERS" />
       <CardListContainer>
-        {characters ? (
+        {characters.length ? (
           characters.map((char) => (
             <CharacterCard
               key={char.id}
