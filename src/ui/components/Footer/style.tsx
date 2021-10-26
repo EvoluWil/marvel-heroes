@@ -2,12 +2,19 @@ import { styled } from "@mui/material/styles";
 import { Container, Typography } from "@mui/material";
 
 export const FooterStyled = styled("footer")`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: ${({ theme }) => theme.palette.secondary.main};
   color: ${({ theme }) =>
     theme.palette.getContrastText(theme.palette.primary.main)};
   padding-top: ${({ theme }) => theme.spacing(4)};
   margin-top: auto;
   border-radius: ${({ theme }) => theme.spacing(3) + " " + theme.spacing(3)} 0 0;
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    flex-direction: column;
+  }
 `;
 
 export const FooterContainer = styled(Container)`
@@ -16,6 +23,7 @@ export const FooterContainer = styled(Container)`
   gap: ${({ theme }) => theme.spacing(2)};
   flex-wrap: wrap;
   ${({ theme }) => theme.breakpoints.down("md")} {
+    justify-content: center;
     gap: ${({ theme }) => theme.spacing(5)};
   }
 `;
@@ -30,6 +38,15 @@ export const AppList = styled("ul")`
     transition: height 0.2s;
     &:hover {
       height: 32px;
+    }
+  }
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    img {
+      height: 24px;
+      &:hover {
+        height: 26px;
+      }
     }
   }
 `;

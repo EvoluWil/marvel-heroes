@@ -30,24 +30,45 @@ export interface EventTypes {
   characters: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
-  };
-
-  stories: {
-    available: number;
-    collectionURI: string;
-    items: RedirectTypes;
+    items: RedirectTypes[];
   };
 
   comics: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items: RedirectTypes[];
   };
 
   series: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items: RedirectTypes[];
+  };
+}
+
+export interface EventDataTypes {
+  data: {
+    total: number;
+    limit: 20;
+    offset: 0;
+    results: EventTypes[];
+  };
+}
+
+export interface EventCardProps {
+  id: number;
+  title: string;
+  description: string;
+  thumbnail: ThumbnailTypes;
+
+  creators: {
+    available: number;
+    items: CreatorTypes[];
+  };
+
+  characters: {
+    available: number;
+    collectionURI: string;
+    items: RedirectTypes[];
   };
 }

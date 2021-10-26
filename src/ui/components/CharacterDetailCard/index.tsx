@@ -1,16 +1,10 @@
-import { Typography } from "@mui/material";
 import { CharacterCardProps } from "data/@types/Character";
 import React from "react";
-import { NavDetail } from "../NavDetails";
 import { Title } from "../Title";
-import { CardContainer, HeroImage, HeroName, StatsContainer } from "./style";
+import { CardContainer, HeroImage } from "./style";
 
 export const CharacterDetailCard: React.FC<CharacterCardProps> = ({
-  comics,
-  events,
   name,
-  series,
-  stories,
   thumbnail,
   description,
   onClick,

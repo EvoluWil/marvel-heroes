@@ -14,7 +14,7 @@ const NotFound404 = () => {
           setEffect(false);
         }, 400);
       }, 200);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
@@ -26,7 +26,7 @@ const NotFound404 = () => {
         />
         <div>
           <img
-            src="404.png"
+            src="/404.png"
             style={{
               width: effect ? "254px" : "250px",
               transition: "width 0.4s",

@@ -17,11 +17,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009220/series",
     },
-    stories: {
-      available: 3555,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009220/stories",
-    },
     events: {
       available: 31,
       collectionURI:
@@ -45,11 +40,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009351/series",
     },
-    stories: {
-      available: 2583,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009351/stories",
-    },
     events: {
       available: 26,
       collectionURI:
@@ -72,11 +62,6 @@ export const AVENGERS: CharacterCardProps[] = [
       available: 633,
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009368/series",
-    },
-    stories: {
-      available: 3914,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009368/stories",
     },
     events: {
       available: 31,
@@ -102,11 +87,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009189/series",
     },
-    stories: {
-      available: 657,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009189/stories",
-    },
     events: {
       available: 16,
       collectionURI:
@@ -129,11 +109,6 @@ export const AVENGERS: CharacterCardProps[] = [
       available: 510,
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009664/series",
-    },
-    stories: {
-      available: 2695,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009664/stories",
     },
     events: {
       available: 27,
@@ -158,11 +133,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009187/series",
     },
-    stories: {
-      available: 887,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009187/stories",
-    },
     events: {
       available: 17,
       collectionURI:
@@ -185,11 +155,6 @@ export const AVENGERS: CharacterCardProps[] = [
       available: 71,
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009297/series",
-    },
-    stories: {
-      available: 228,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009297/stories",
     },
     events: {
       available: 7,
@@ -214,11 +179,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009562/series",
     },
-    stories: {
-      available: 603,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009562/stories",
-    },
     events: {
       available: 17,
       collectionURI:
@@ -241,11 +201,6 @@ export const AVENGERS: CharacterCardProps[] = [
       available: 184,
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1010338/series",
-    },
-    stories: {
-      available: 637,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1010338/stories",
     },
     events: {
       available: 16,
@@ -270,11 +225,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009338/series",
     },
-    stories: {
-      available: 691,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009338/stories",
-    },
     events: {
       available: 19,
       collectionURI:
@@ -297,11 +247,6 @@ export const AVENGERS: CharacterCardProps[] = [
       available: 1044,
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009610/series",
-    },
-    stories: {
-      available: 6049,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009610/stories",
     },
     events: {
       available: 38,
@@ -326,11 +271,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1009282/series",
     },
-    stories: {
-      available: 1087,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1009282/stories",
-    },
     events: {
       available: 22,
       collectionURI:
@@ -353,11 +293,6 @@ export const AVENGERS: CharacterCardProps[] = [
       available: 36,
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1010733/series",
-    },
-    stories: {
-      available: 141,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1010733/stories",
     },
     events: {
       available: 4,
@@ -382,11 +317,6 @@ export const AVENGERS: CharacterCardProps[] = [
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1010763/series",
     },
-    stories: {
-      available: 73,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1010763/stories",
-    },
     events: {
       available: 5,
       collectionURI:
@@ -409,11 +339,6 @@ export const AVENGERS: CharacterCardProps[] = [
       available: 101,
       collectionURI:
         "http://gateway.marvel.com/v1/public/characters/1010740/series",
-    },
-    stories: {
-      available: 227,
-      collectionURI:
-        "http://gateway.marvel.com/v1/public/characters/1010740/stories",
     },
     events: {
       available: 11,

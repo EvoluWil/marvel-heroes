@@ -23,19 +23,43 @@ export interface ComicTypes {
   characters: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items: RedirectTypes[];
   };
 
   series: RedirectTypes;
-  stories: {
-    available: number;
-    collectionURI: string;
-    items: RedirectTypes;
-  };
-
   events: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
+    items: RedirectTypes[];
+  };
+}
+
+export interface ComicDataTypes {
+  data: {
+    total: number;
+    limit: 20;
+    offset: 0;
+    results: ComicTypes[];
+  };
+}
+
+export interface ComicCardProps {
+  id: number;
+  title: string;
+  description: string;
+  pageCount: number;
+  thumbnail: ThumbnailTypes;
+
+  prices: [{ price: number }];
+
+  creators: {
+    available: number;
+    items: CreatorTypes[];
+  };
+
+  characters: {
+    available: number;
+    collectionURI: string;
+    items: RedirectTypes[];
   };
 }

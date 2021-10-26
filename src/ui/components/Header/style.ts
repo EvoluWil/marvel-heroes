@@ -20,6 +20,8 @@ export const HeaderLogo = styled("img")`
 
 export const HeaderBanner = styled("img")`
   width: 100vw;
+  max-height: 650px;
+  object-fit: cover;
   border-radius: 4px;
   box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.05);
 `;

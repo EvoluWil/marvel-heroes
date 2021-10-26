@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 
 export const IndexContainer = styled("main")`
-  margin-top: -15px;
+  margin-top: -20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,5 +41,6 @@ export const AvengerContainer = styled("section")`
     position: absolute;
     height: 100%;
     z-index: 0;
+    object-fit: cover;
   }
 `;

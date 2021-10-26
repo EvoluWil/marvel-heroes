@@ -8,7 +8,6 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
   events,
   name,
   series,
-  stories,
   thumbnail,
   onClick,
 }) => {
@@ -32,12 +31,6 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
             <strong>Series</strong>
           </Typography>
           <Typography variant="body2">{series.available}</Typography>
-        </div>
-        <div>
-          <Typography variant="body2">
-            <strong>Stories</strong>
-          </Typography>
-          <Typography variant="body2">{stories.available}</Typography>
         </div>
         <div>
           <Typography variant="body2">

@@ -1,4 +1,4 @@
-import { Card, styled, TextField } from "@mui/material";
+import { Card, styled } from "@mui/material";
 
 export const CardContainer = styled(Card)`
   text-align: center;
@@ -20,6 +20,7 @@ export const HeroImage = styled("div")`
   overflow: hidden;
 
   img {
+    object-fit: cover;
     width: 100%;
     min-height: 100%;
     border-radius: ${({ theme }) => theme.spacing(3)} 0 0;
@@ -45,11 +46,10 @@ export const HeroName = styled("div")`
 
 export const StatsContainer = styled("div")`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: ${({ theme }) => theme.spacing(1)} 0;
   border-radius: 0 0 ${({ theme }) => theme.spacing(3)} 0;
   border: 2px solid ${({ theme }) => theme.palette.primary.main};
-
   h6 {
     margin: ${({ theme }) => theme.spacing(1)};
   }

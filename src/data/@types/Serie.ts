@@ -30,13 +30,7 @@ export interface SerieTypes {
   characters: {
     available: number;
     collectionURI: string;
-    items: RedirectTypes;
-  };
-
-  stories: {
-    available: number;
-    collectionURI: string;
-    items: RedirectTypes;
+    items: RedirectTypes[];
   };
 
   comics: {
@@ -45,9 +39,36 @@ export interface SerieTypes {
     items: RedirectTypes;
   };
 
-  events: {
+  series: {
     available: number;
     collectionURI: string;
     items: RedirectTypes;
+  };
+}
+
+export interface SerieDataTypes {
+  data: {
+    total: number;
+    limit: 20;
+    offset: 0;
+    results: SerieTypes[];
+  };
+}
+
+export interface SerieCardProps {
+  id: number;
+  title: string;
+  description: string;
+  thumbnail: ThumbnailTypes;
+
+  creators: {
+    available: number;
+    items: CreatorTypes[];
+  };
+
+  characters: {
+    available: number;
+    collectionURI: string;
+    items: RedirectTypes[];
   };
 }

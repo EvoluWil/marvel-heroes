@@ -22,11 +22,6 @@ export interface CharacterTypes {
     items?: RedirectTypes;
   };
 
-  stories: {
-    available: number;
-    collectionURI: string;
-    items?: RedirectTypes;
-  };
 
   events: {
     available: number;
@@ -64,11 +59,6 @@ export interface CharacterCardProps {
     items?: RedirectTypes;
   };
 
-  stories: {
-    available: number;
-    collectionURI: string;
-    items?: RedirectTypes;
-  };
 
   events: {
     available: number;
