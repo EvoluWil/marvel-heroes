@@ -10,19 +10,20 @@
 This applications is an personal project with Marvel api consumed.
 ![MarvelCaptain]("./src/assets/404.png")
 
-## GIF Web
+## screens
 
-![screenWeb]("./src/assets/screenWeb.gif")
+![screenWeb]("./src/assets/screenWeb.png")
 
-## GIF Mobile
+![screenWeb]("./src/assets/screenWeb1.png")
 
-![screenMobile]("./src/assets/screenWeb.gif")
+![screenWeb]("./src/assets/screenWeb2.png")
 
 ## Features
 
 - List of the MARVEL characters, events, comics and series.
 - Summary cards .
-- consuming MARVEL public API.
+- Consuming MARVEL public API.
+- Resposible and pagination
 
 ## Technologies
 
