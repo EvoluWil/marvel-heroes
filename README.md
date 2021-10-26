@@ -7,15 +7,16 @@
 
 ## About
 
-This applications is an personal project with Marvel api consumed. ![MarvelCaptain]("https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/404.png")
+This applications is an personal project with Marvel api consumed. <img height="150px" src="https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/404.png?raw=true" alt="Marvel" />
 
 ## screens
 
-![screenWeb]("https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/screenWeb.png")
+<img src="https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/screenWeb.png" alt="screen1"/>
 
-![screenWeb]("https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/screenWeb1.png")
+<img src="https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/screenWeb1.png" alt="screen2"/>
 
-![screenWeb]("https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/screenWeb2.png")
+<img src="https://github.com/Willian-Rodrigues/marvel-heroes/blob/main/public/screenWeb2.png" alt="screen3"/>
+
 
 ## Features
 
